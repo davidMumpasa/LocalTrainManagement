@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Train"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="150dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+    <EditText
+        android:id="@+id/editTextTrainName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:hint="Train Name" />
+
+
+    <Spinner
+        android:id="@+id/spinnerOriginId"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:layout_below="@id/editTextTrainName"
+        android:prompt="@string/select_station"
+        android:padding="12dp"
+        android:entries="@array/station_array"
+        />
+
+    <Spinner
+        android:id="@+id/SpinnerDestId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerOriginId"
+        android:prompt="@string/select_station"
+        android:padding="12dp"
+        android:entries="@array/station_array"
+        />
+
+    <EditText
+        android:id="@+id/editTextDepartureTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SpinnerDestId"
+        android:hint="Departure Time"
+        android:textSize="18sp"
+        android:inputType="date"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editTextArrivalTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDepartureTime"
+        android:hint="Arrival Time"
+        android:textSize="18sp"
+        android:inputType="time"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextArrivalTime"
+        android:hint="Capacity"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCapacity"
+        android:hint="Price"
+        android:textSize="18sp"
+        android:inputType="text"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonAddTrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPrice"
+        android:backgroundTint="@color/teal"
+        android:text="Add Train" />
+
+</RelativeLayout>

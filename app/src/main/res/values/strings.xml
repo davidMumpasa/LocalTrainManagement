@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="appName">Local Train Booking</string>
+    <string name="payment_method_image">Payment Method Image</string>
+
+
+    <string name="select_seat">Select Seat</string>
+
+    <!-- Array of available seats -->
+    <string-array name="seats_array">
+        <item>Seat A1</item>
+        <item>Seat A2</item>
+        <item>Seat A3</item>
+
+    </string-array>
+
+    <!-- Prompt for selecting a train -->
+    <string name="select_train">Select Train</string>
+    <string name="select_station">Select Station</string>
+
+    <!-- Array of available trains -->
+    <string-array name="trains_array">
+        <item>Train XYZ</item>
+        <item>Train ABC</item>
+        <item>Train DEF</item>
+        <!-- Add more train options as needed -->
+    </string-array>
+
+    <string-array name="station_array">
+        <item>Pretoria</item>
+        <item>Midrand</item>
+        <item>Centurion</item>
+        <item>Malboro</item>
+        <item>sadton</item>
+    </string-array>
+
+    <string name="about_train_booking">
+        <![CDATA[
+        Welcome to our Train Booking App!
+
+        Our mission is to provide you with a seamless and convenient way to book train tickets for your journeys. Whether you are commuting daily or planning a long-distance trip, our app is designed to make your travel experience hassle-free and enjoyable.
+
+        Key Features:
+        - Easy Booking: Quickly search for trains, select your preferred seats, and book tickets with just a few taps.
+        - Comprehensive Information: Get detailed information about train schedules, routes, fares, and available seats.
+        - Secure Payments: Enjoy secure payment options and receive instant booking confirmations for your peace of mind.
+        - User-Friendly Interface: Our app is designed with a user-friendly interface for smooth navigation and seamless ticket booking.
+        - Personalized Experience: Save your favorite routes, view booking history, and receive personalized recommendations based on your travel preferences.
+
+        About Us:
+        We are a dedicated team passionate about simplifying your travel experience. Our goal is to provide reliable and efficient train booking services, ensuring that you can travel comfortably and confidently.
+
+        Contact Us:
+        If you have any questions, feedback, or need assistance, please don\'t hesitate to contact our support team at support@trainbookingapp.com. We\'re here to help you have a great journey!
+
+        Thank you for choosing our Train Booking App. Happy travels!
+        ]]>
+    </string>
+
+
+</resources>

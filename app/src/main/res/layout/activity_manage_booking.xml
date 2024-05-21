@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextPassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Passenger Name"
+        android:padding="10dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextBookingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Booking Date"
+        android:padding="10dp"
+        android:layout_below="@id/editTextPassName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextBookingTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Booking Time"
+        android:padding="10dp"
+        android:layout_below="@id/editTextBookingDate"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTrain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train Name"
+        android:padding="10dp"
+        android:layout_below="@id/editTextBookingTime"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextSeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seat"
+        android:padding="10dp"
+        android:layout_below="@id/editTextTrain"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_below="@id/editTextSeat"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@id/editTextSeat"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

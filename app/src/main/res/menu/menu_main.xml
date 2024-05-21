@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/menu_viewBookings"
+        android:title="View Bookings" />
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Logout" />
+    <item
+        android:id="@+id/menu_about"
+        android:title="About" />
+</menu>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Passenger Name -->
+    <EditText
+        android:id="@+id/editTextPassengerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Passenger Name"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Select Seat -->
+    <Spinner
+        android:id="@+id/spinnerSelectSeat"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:prompt="@string/select_station"
+        android:entries="@array/seats_array"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginBottom="16dp" />
+
+
+    <!-- Select Train -->
+    <Spinner
+        android:id="@+id/spinnerSelectTrain"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/dropdownListPreferredItemHeight"
+        android:prompt="@string/select_train"
+        android:background="@drawable/edittext_bg"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Select Date -->
+    <EditText
+        android:id="@+id/editTextSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:textSize="18sp"
+        android:inputType="date"
+        android:background="@drawable/edittext_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Select Time -->
+    <EditText
+        android:id="@+id/editTextSelectTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Time"
+        android:textSize="18sp"
+        android:inputType="time"
+        android:background="@drawable/edittext_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Confirm Booking Button -->
+    <Button
+        android:id="@+id/btnConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:backgroundTint="@color/teal"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
